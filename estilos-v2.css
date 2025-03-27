@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:#069F9F;
+    --secondary:black;
+    --terteary:#001212;
+    --quaternary:#636869;
+}
+
+.centrado-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    height: 100%;
+    --padding-top:8rem
+}
+
+
+h1 {
+    text-shadow: 5px 1px 14px rgba(6,159,159,0.67);
+    font-size: 6rem;
+    color: var(--primary);
+    font-family: 'Anton', sans-serif;
+}
+
+ion-toolbar {
+  --background: var(--secondary);
+}
+
+ion-content>h2{
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--quaternary); 
+    font-size: larger;
+}
+
+ion-content::part(background) {
+    background: url(imagenes/imagenFondo.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    text-decoration: none;
+
+}
+
+#menu > ion-content::part(background) {
+    background: linear-gradient(180deg, var(--secondary) 80%, var(--primary) 100%);
+    background-size: 100% 100%; 
+    background-blend-mode: normal; 
+    text-decoration: none;
+}
+
+
+
+
+ion-title{
+    background:var(--secondary)
+}
+
+#menu ion-content > ion-item {
+    color: var(--primary); 
+    --background: transparent; 
+    --color: var(--primary); 
+}
+
+ion-menu-button{
+    color:var(--primary)
+}
+
+  /* registro */
+  #pantallaRegistro>ion-content > ion-item{
+    background-color: transparent;
+    color: white; 
+    --background: transparent; 
+    --color: var(--primary); 
+  }
+
+  #pantallaRegistro>h1{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #btnRegistrar{
+    margin-top: 3rem;
+    --background: var(--terteary);
+    --background-hover:var(--quaternary);
+    --color: var(--primary);
+    --background-activated: var(--quaternary);
+
+  }
+  
+  /* Login */
+
+  #btnLogin{
+    margin-top: 3rem;
+    --background: var(--terteary);
+    --background-hover:var(--quaternary);
+    --color: var(--primary);
+    --background-activated: var(--quaternary);
+
+  }
+  #pantallaLogin>ion-content > ion-item{
+    background-color: transparent;
+    color: white; 
+    --background: transparent; 
+    --color: var(--primary); 
+}
+
+#pantallaLogin>h1{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* agregar registro */
+
+  #agregarRegistro>ion-content > ion-item{
+    background-color: transparent;
+    color: white; 
+    --background: transparent; 
+    --color: var(--primary); 
+  }
+
+  #agregarRegistro>h1{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #btnAgregarRegistro{
+    margin-top: 3rem;
+    --background: var(--terteary);
+    --background-hover:var(--quaternary);
+    --color: var(--primary);
+    --background-activated: var(--quaternary);
+
+  } 
+
+  /* LISTADO */
+
+  #listado>ion-content > ion-item{
+    background-color: transparent;
+    color: white; 
+    --background: transparent; 
+    --color: var(--primary); 
+  }
+
+  #listado>h1{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #btnObtenerListado{
+    margin-top: 3rem;
+    --background: var(--terteary);
+    --background-hover:var(--quaternary);
+    --color: var(--primary);
+    --background-activated: var(--quaternary);
+
+  }
+
+  #contenedorListado{
+    background-color: transparent;
+    color: var(--primary);
+  }
+
+  #btnEliminar{
+    --background: var(--terteary);
+    --background-hover:var(--quaternary);
+    --color: var(--primary);
+    --background-activated: var(--quaternary);
+  }
+
+  #listado>ion-list > ion-item{
+    background-color: var(--secondary);
+    /* color: black;  */
+    --background: transparent; 
+    --color: var(--primary); 
+  }
+
+/* Informe de tiempo */
+
+  #informe>h1{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .informeCentrado{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+ .informeCentrado h3 {
+    font-family: Rajdhani;
+    color: var(--primary); 
+    font-size: x-large  ;
+    font-weight: 1000;
+  }
+
+  .informeCentrado p{
+    color: white;
+  }
+  
+
+  /* MAPA */
+
+  #mapa>h1{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
